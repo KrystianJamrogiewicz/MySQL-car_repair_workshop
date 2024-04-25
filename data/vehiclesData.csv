@@ -1,0 +1,31 @@
+customer_id,brand,model,year_of_production
+1,Honda,Civic,2018
+1,Ford,Mustang,2019
+2,BMW,1 Series,2008
+3,Mercedes-Benz,A-Class,2015
+3,Volkswagen,Golf,2019
+3,Nissan,Altima,2016
+3,Chevrolet,Silverado,2014
+4,Hyundai,Sonata,2011
+5,Kia,Sorento,2010
+5,Subaru,Outback,2009
+5,Mazda,CX-5,2013
+6,Jeep,Wrangler,2013
+7,Lexus,RX,2019
+7,Acura,TLX,2020
+8,Buick,Enclave,2021
+9,Cadillac,Escalade,2020
+9,Dodge,Charger,2014
+9,GMC,Sierra,2009
+9,Honda,Pilot,2010
+10,Hyundai,Tucson,2012
+11,Infiniti,QX60,2016
+11,Jaguar,F-PACE,2015
+11,Jeep,Grand Cherokee,2011
+12,Kia,Telluride,2020
+13,Land Rover,Range Rover,2010
+14,Lexus,LX,2022
+14,Lincoln,Navigator,2009
+14,Maserati,Ghibli,2013
+14,Mazda,CX-9,2020
+15,McLaren,720S,2017

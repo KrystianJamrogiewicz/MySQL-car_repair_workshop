@@ -35,20 +35,20 @@ CREATE TABLE services (
 
 INSERT INTO customers (first_name, last_name, phone_number, email)
 VALUES
-  ('John', 'Doe', '123456789', 'john.doe@example.com'),
-  ('Jane', 'Smith', '987654321', 'jane.smith@example.com'),
-  ('Michael', 'Johnson', '456789123', 'michael.johnson@example.com'),
-  ('Emily', 'Brown', '789123456', 'emily.brown@example.com'),
-  ('David', 'Wilson', '159753852', 'david.wilson@example.com');
+  ('Artur', 'Boruc', '132476001', 'artur.boruc@example.com'),
+  ('Adam', 'Małysz', '637947009', 'adam.malysz@example.com'),
+  ('Andrzej', 'Gołota', '874678754', 'andrzej.golota@example.com'),
+  ('Mariusz', 'Pudzianowski', '33322111', 'mariusz.pudzianowski@example.com'),
+  ('Robert', 'Lewandowski', '111222333', 'robert.lewandowski@example.com');
 
 INSERT INTO vehicles (customer_id, brand, model, year_of_production)
 VALUES
-  (1, 'Toyota', 'Corolla', 2020),
-  (1, 'Honda', 'Civic', 2018),
-  (2, 'Ford', 'Mustang', 2019),
-  (3, 'BMW', '3 Series', 2021),
-  (4, 'Mercedes-Benz', 'C-Class', 2022),
-  (5, 'Volkswagen', 'Golf', 2019);
+  (1, 'Toyota', 'Corolla', 2015),
+  (1, 'Honda', 'Civic', 2013),
+  (2, 'Ford', 'Mustang', 2014),
+  (3, 'BMW', '3 Series', 2011),
+  (4, 'Mercedes-Benz', 'C-Class', 2020),
+  (5, 'Volkswagen', 'Golf', 2017);
 
 INSERT INTO services (vehicle_id, customer_id, name_of_service, description_of_service, price_pln, data)
 VALUES
