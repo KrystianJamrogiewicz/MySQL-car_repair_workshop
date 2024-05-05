@@ -48,7 +48,7 @@ INNER JOIN
 GROUP BY customers.customer_id
 ORDER BY `Number of cars` DESC LIMIT 5;
 
-
+-- Displaying the owner and model of vehicles of the selected brand
 SELECT vehicles.model AS Model, 
 	concat(customers.first_name," ", customers.last_name)  AS Customer
 FROM vehicles
@@ -56,7 +56,7 @@ INNER JOIN
 	customers ON vehicles.customer_id = customers.customer_id
 WHERE vehicles.brand IN("Honda", "BMW");
 
--- Displaying all vehicles of a selected customer
+-- Displaying all vehicles of the selected customer
 SELECT concat(vehicles.brand," ", vehicles.model)  AS Vehicle,
 	concat(customers.first_name," ", customers.last_name)  AS Customer
 FROM vehicles
