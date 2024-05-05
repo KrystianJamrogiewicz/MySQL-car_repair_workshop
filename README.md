@@ -6,29 +6,21 @@
 
 This database stores information about customers, their vehicles, and the services performed. It consists of 3 tables: customers, vehicles, and services. The primary keys are the id fields of each table.
 
-# Sample database queries
+<h1> Sample database queries on queriesCarRepairWorkshop.sql file </h1>
+<p>
 - Displaying the key information about a performed service
 
-	SELECT DISTINCT services.service_id AS "Service id",
-
+	SELECT DISTINCT services.service_id AS "Service id", 
 		concat(customers.first_name," ", customers.last_name)  AS Customer,
-  
 		concat(vehicles.brand," ", vehicles.model)  AS Vehicle,
-  
 		services.name_of_service AS Service, services.price_pln AS "Price [PLN]", services.data AS Data
-  
 	FROM customers
-
 	INNER JOIN
-
 		vehicles ON customers.customer_id = vehicles.customer_id
-  
 	INNER JOIN
-
 		services ON services.vehicle_id = vehicles.vehicle_id
-  
 	ORDER BY `Service id`;
-
+</p>
 
 <p align="center"> <img src="https://github.com/KrystianJamrogiewicz/MySQL-car_repair_workshop/assets/155767356/29c8d62a-c869-4bd3-a1ff-41599b5d82b9" alt="Image Description"> </p>
 
