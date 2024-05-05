@@ -1,5 +1,4 @@
-# MySQL-car_repair_workshop
-Simple MySQL Database Project for a car repair shop.
+# MySQL Database Project for a car repair shop.
 
 
 <p align="center"> <img src="https://github.com/KrystianJamrogiewicz/MySQL-car_repair_workshop/assets/155767356/e859ccb1-9af0-408b-8e9e-a26a0d0b3cd6" alt="Image Description"> </p>
@@ -11,14 +10,23 @@ This database stores information about customers, their vehicles, and the servic
 - Displaying the key information about a performed service
 
 	SELECT DISTINCT services.service_id AS "Service id",
-		concat(customers.first_name," ", customers.last_name)  AS Customer, 
-		concat(vehicles.brand," ", vehicles.model)  AS Vehicle, 
+
+		concat(customers.first_name," ", customers.last_name)  AS Customer,
+  
+		concat(vehicles.brand," ", vehicles.model)  AS Vehicle,
+  
 		services.name_of_service AS Service, services.price_pln AS "Price [PLN]", services.data AS Data
-	FROM customers 
-	INNER JOIN 
-		vehicles ON customers.customer_id = vehicles.customer_id
+  
+	FROM customers
+
 	INNER JOIN
+
+		vehicles ON customers.customer_id = vehicles.customer_id
+  
+	INNER JOIN
+
 		services ON services.vehicle_id = vehicles.vehicle_id
+  
 	ORDER BY `Service id`;
 
 
