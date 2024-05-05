@@ -26,6 +26,7 @@ This database stores information about customers, their vehicles, and the servic
 
 
 - Displaying the 5 most frequently performed services
+
 	SELECT count(services.name_of_service) AS "Number of services",
 		services.name_of_service AS "Name of service"
 	FROM services
@@ -37,6 +38,7 @@ This database stores information about customers, their vehicles, and the servic
 
 
 - Displaying the 3 most expensive services
+  
 	SELECT DISTINCT services.name_of_service AS Service, 
 		services.price_pln AS "Price [PLN]" 
 	FROM services 
@@ -47,6 +49,7 @@ This database stores information about customers, their vehicles, and the servic
 
 
 - Displaying the number of repaired vehicles by brand
+  
 	SELECT count(vehicles.vehicle_id) AS "Numbers of vehicles", 
 		vehicles.brand AS "Vehicles brand"
 	FROM vehicles
@@ -58,6 +61,7 @@ This database stores information about customers, their vehicles, and the servic
 
 
 - Displaying the 5 most profitable customers
+  
 	SELECT SUM(services.price_pln) AS "Total price", 
 		concat(customers.first_name, " ", customers.last_name) AS Customer
 	FROM services
@@ -71,6 +75,7 @@ This database stores information about customers, their vehicles, and the servic
 
 
 - Displaying customers with the highest number of vehicles
+  
 	SELECT count(vehicles.vehicle_id) AS "Number of cars", 
 		concat(customers.first_name, " ", customers.last_name) AS Customer
 	FROM customers
@@ -84,6 +89,7 @@ This database stores information about customers, their vehicles, and the servic
 
 
 - Displaying the owner and model of vehicles of the selected brand
+  
 	SELECT vehicles.model AS Model, 
 		concat(customers.first_name," ", customers.last_name)  AS Customer
 	FROM vehicles
@@ -96,6 +102,7 @@ This database stores information about customers, their vehicles, and the servic
 
 
 - Displaying all vehicles of the selected customer
+  
 	SELECT concat(vehicles.brand," ", vehicles.model)  AS Vehicle,
 		concat(customers.first_name," ", customers.last_name)  AS Customer
 	FROM vehicles
