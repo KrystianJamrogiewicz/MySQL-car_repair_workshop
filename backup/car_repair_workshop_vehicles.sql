@@ -43,7 +43,7 @@ CREATE TABLE `vehicles` (
 
 LOCK TABLES `vehicles` WRITE;
 /*!40000 ALTER TABLE `vehicles` DISABLE KEYS */;
-INSERT INTO `vehicles` VALUES (1,1,'Toyota','Corolla',2015),(2,1,'Honda','Civic',2013),(3,2,'Ford','Mustang',2014),(4,3,'BMW','3 Series',2011),(5,4,'Mercedes-Benz','C-Class',2020),(6,5,'Volkswagen','Golf',2017),(7,1,'Honda','Civic',2018),(8,1,'Ford','Mustang',2019),(9,2,'BMW','1 Series',2008),(10,3,'Mercedes-Benz','A-Class',2015),(11,3,'Volkswagen','Golf',2019),(12,3,'Nissan','Altima',2016),(13,3,'Chevrolet','Silverado',2014),(14,4,'Hyundai','Sonata',2011),(15,5,'Kia','Sorento',2010),(16,5,'Subaru','Outback',2009),(17,5,'Mazda','CX-5',2013),(18,6,'Jeep','Wrangler',2013),(19,7,'Lexus','RX',2019),(20,7,'Acura','TLX',2020),(21,8,'Buick','Enclave',2021),(22,9,'Cadillac','Escalade',2020),(23,9,'Dodge','Charger',2014),(24,9,'GMC','Sierra',2009),(25,9,'Honda','Pilot',2010),(26,10,'Hyundai','Tucson',2012),(27,11,'Infiniti','QX60',2016),(28,11,'Jaguar','F-PACE',2015),(29,11,'Jeep','Grand Cherokee',2011),(30,12,'Kia','Telluride',2020),(31,13,'Land Rover','Range Rover',2010),(32,14,'Lexus','LX',2022),(33,14,'Lincoln','Navigator',2009),(34,14,'Maserati','Ghibli',2013),(35,14,'Mazda','CX-9',2020),(36,15,'McLaren','720S',2017);
+INSERT INTO `vehicles` VALUES (1,1,'Toyota','Corolla',2015),(2,1,'Honda','Civic',2013),(3,2,'Ford','Mustang',2014),(4,3,'BMW','3 Series',2011),(5,4,'Mercedes-Benz','C-customersClass',2020),(6,5,'Volkswagen','Golf',2017),(7,6,'Honda','Civic',2018),(8,6,'Ford','Mustang',2019),(9,7,'BMW','1 Series',2008),(10,8,'Mercedes-Benz','A-Class',2015),(11,8,'Volkswagen','Golf',2019),(12,8,'Nissan','Altima',2016),(13,8,'Chevrolet','Silverado',2014),(14,9,'Hyundai','Sonata',2011),(15,10,'Kia','Sorento',2010),(16,10,'Subaru','Outback',2009),(17,10,'Mazda','CX-5',2013),(18,11,'Jeep','Wrangler',2013),(19,12,'Lexus','RX',2019),(20,12,'Acura','TLX',2020),(21,13,'Buick','Enclave',2021),(22,14,'Cadillac','Escalade',2020),(23,14,'Dodge','Charger',2014),(24,14,'GMC','Sierra',2009),(25,14,'Honda','Pilot',2010),(26,15,'Hyundai','Tucson',2012),(27,16,'Infiniti','QX60',2016),(28,16,'Jaguar','F-PACE',2015),(29,16,'Jeep','Grand Cherokee',2011),(30,17,'Kia','Telluride',2020),(31,18,'Land Rover','Range Rover',2010),(32,19,'Lexus','LX',2022),(33,19,'Lincoln','Navigator',2009),(34,19,'Maserati','Ghibli',2013),(35,19,'Mazda','CX-9',2020),(36,20,'McLaren','720S',2017);
 /*!40000 ALTER TABLE `vehicles` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -56,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-25 21:37:50
+-- Dump completed on 2024-05-05 17:22:12
